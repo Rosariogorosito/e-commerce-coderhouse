@@ -1,0 +1,23 @@
+.widget-container {
+    margin-top: -1.2rem;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.widget-container p {
+    margin-bottom: -0.1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width:1200px) {
+    .widget-container i {
+        font-size: 20px;
+    }
+
+    .widget-container {
+        margin-top: -1rem;
+        margin-right: 33px;
+    }
+    
+}
