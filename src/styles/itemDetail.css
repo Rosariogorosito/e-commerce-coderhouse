@@ -1,0 +1,23 @@
+.card-detail-container {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-detail {
+    text-align: center;
+    font-weight: 500;
+}
+
+.text-detail {
+    font-size: 14px;
+}
+
+.price-detail {
+    font-weight: 500;
+}

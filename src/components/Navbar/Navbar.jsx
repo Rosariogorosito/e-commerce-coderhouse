@@ -1,8 +1,8 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo-derive-sin-fondo.png";
-import "../styles/navbar.css"
+import Logo from "../../assets/logo-derive-sin-fondo.png";
+import "../../styles/navbar.css";
+import { CartWidget } from "./CartWidget"; // Asegúrate de que CartWidget esté importado correctamente
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false);
@@ -64,46 +64,42 @@ const Navbar = () => {
                     <div className="logo" onClick={() => scrollToElement("navbar")}>
                         <img src={Logo} alt="Logo-dérive" />
                     </div>
+                    
                     <ul className={`navbar-links ${menuActive ? "active" : ""}`}>
-                        {/* <li>
-                            <Link onClick={() => scrollToElement("header")}>Inicio</Link>
-                        </li> */}
-
                         <li>
                             <Link to="/category/all">
                                 Todos los productos
                             </Link>
                         </li>
-
                         <li>
                             <Link to="/category/mates">
                                 Mates
                             </Link>
                         </li>
-
                         <li>
                             <Link to="/category/tablas">
                                 Tablas
                             </Link>
                         </li>
-
                         <li>
                             <Link to="/category/sets">
                                 Sets
                             </Link>
                         </li>
-
                         <li>
                             <Link onClick={() => scrollToElement("seccion-contacto")}>
                                 Contacto
                             </Link>
                         </li>
-
                     </ul>
-                    <div className="navbar-toggle" onClick={toggleMenu}>
-                        <span className={`bar ${menuActive ? "active" : ""}`}></span>
-                        <span className={`bar ${menuActive ? "active" : ""}`}></span>
-                        <span className={`bar ${menuActive ? "active" : ""}`}></span>
+                    
+                    <div className="icons-container">
+                        <CartWidget />
+                        <div className="navbar-toggle" onClick={toggleMenu}>
+                            <span className={`bar ${menuActive ? "active" : ""}`}></span>
+                            <span className={`bar ${menuActive ? "active" : ""}`}></span>
+                            <span className={`bar ${menuActive ? "active" : ""}`}></span>
+                        </div>
                     </div>
                 </div>
             </nav>

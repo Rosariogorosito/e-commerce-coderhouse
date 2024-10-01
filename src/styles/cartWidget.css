@@ -1,7 +1,12 @@
 .widget-container {
-    margin-top: -1.2rem;
+    margin-top: 0.2rem;
     margin-right: 14px;
     cursor: pointer;
+}
+
+.widget-container i {
+    font-size: 21px;
+    color:rgba(0, 0, 0, 0.712);;
 }
 
 .widget-container p {
@@ -10,13 +15,18 @@
     justify-content: flex-end;
 }
 
+.button-widget {
+    border: none;
+    margin-top: -0.7rem;
+}
+
 @media (min-width:1200px) {
     .widget-container i {
         font-size: 20px;
     }
 
     .widget-container {
-        margin-top: -1rem;
+        margin-top: 0.1rem;
         margin-right: 33px;
     }
     

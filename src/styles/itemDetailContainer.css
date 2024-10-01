@@ -10,11 +10,9 @@
     background-color: #fff;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    margin-top: 6rem;
 }
 
 .product-detail-card:hover {

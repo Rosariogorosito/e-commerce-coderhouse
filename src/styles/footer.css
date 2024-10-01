@@ -1,0 +1,44 @@
+
+.footer-inicio {
+    background-color: #f8f9fa;
+    margin-top: 4rem;
+}
+
+.footer-inicio .footer-container {
+    text-align: center;
+}
+
+.address-container,
+.networks-container,
+.contact-container {
+    padding: 25px;
+}
+
+.footer-inicio .footer-container .networks-container a{
+    font-size: 28px;
+}
+
+.footer-inicio .footer-container .contact-container a {
+    font-size: 24px;
+}
+
+.footer-inicio .footer-container a {
+    padding: 8px;
+    transition: .1s linear;
+    color: black;
+}
+
+.contact-container a i:hover {
+    color: rgba(61, 60, 60, 0.868);
+    transition: 0.4s;
+}
+
+.networks-container a i:hover {
+    color: rgba(61, 60, 60, 0.868);
+    transition: 0.4s;
+}
+
+.footer-inicio .footer-container .copy-container {
+    padding: 15px 10px;
+    text-align: center;
+}
