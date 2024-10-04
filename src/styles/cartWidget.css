@@ -1,3 +1,41 @@
+.cart-widget {
+    position: relative;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 100%; /* Coloca el dropdown debajo del botón */
+    right: 0; /* Alinea a la derecha */
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho del dropdown */
+    max-height: 300px; /* Altura máxima del dropdown */
+    overflow-y: auto; /* Permitir scroll si es necesario */
+    z-index: 1000; /* Asegúrate de que se muestre encima de otros elementos */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Sin borde en el último elemento */
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0;
+}
+
 .widget-container {
     margin-top: 0.2rem;
     margin-right: 14px;
@@ -19,6 +57,7 @@
     border: none;
     margin-top: -0.7rem;
 }
+
 
 @media (min-width:1200px) {
     .widget-container i {

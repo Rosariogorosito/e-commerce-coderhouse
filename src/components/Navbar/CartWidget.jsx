@@ -4,15 +4,18 @@ import { Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const CartWidget = () => {
-    const { cart } = useCartContext()
+    const { cart } = useCartContext();
+
+    const totalItems = cart.reduce((acc, prod) => acc + prod.quantity, 0);
+
     return (
         <Link to='/cart'>
             <button className="button-widget">
-                <Badge>{cart.length}</Badge>
+                <Badge>{totalItems}</Badge>
                 <div className="widget-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i className="fa-solid fa-cart-shopping"></i>
                 </div>
             </button>
         </Link>
-    )
-}
+    );
+};

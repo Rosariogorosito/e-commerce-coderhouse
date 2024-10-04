@@ -4,7 +4,7 @@
     gap: 20px;
     max-width: 1500px;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .card {
@@ -21,6 +21,7 @@
     transition: transform 0.3s ease;
     align-items: center;
     text-align: center;
+    margin-bottom: 3.5rem;
 }
 
 .card img {
@@ -52,7 +53,7 @@
     display: none;
     background: none;
     border: none;
-    color: #007bff;
+    color: #333;
     cursor: pointer;
     margin-top: 10px;
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo-derive-sin-fondo.png";
 import "../../styles/navbar.css";
-import { CartWidget } from "./CartWidget"; // Asegúrate de que CartWidget esté importado correctamente
+import { CartWidget } from "./CartWidget";
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false);
@@ -62,7 +62,9 @@ const Navbar = () => {
             <nav id="navbar">
                 <div className="navbar-container">
                     <div className="logo" onClick={() => scrollToElement("navbar")}>
+                        <Link to="/">
                         <img src={Logo} alt="Logo-dérive" />
+                        </Link>
                     </div>
                     
                     <ul className={`navbar-links ${menuActive ? "active" : ""}`}>

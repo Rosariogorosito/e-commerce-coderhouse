@@ -21,3 +21,13 @@
 .price-detail {
     font-weight: 500;
 }
+
+@media (min-width:550px) {
+    .text-detail {
+        width: 400px;
+    }
+
+    .price-detail {
+        font-size: 19px;
+    }
+}
